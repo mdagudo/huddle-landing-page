@@ -50,7 +50,7 @@ I really need to keep learning about Responsive Design and relative units.
 
 - [Font Awesome](https://fontawesome.com/) - I used the icons from Font Awesome. 
 - [Font Awesome Libraries](https://cdnjs.com/libraries/font-awesome) - I was so stuck with how to link my icons to my html and this page finally did it well! I tried many pages and links but it didn't work, only this one.
-- [Sitepoint](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) This article made me understand rem units and introduced me to the 62.5% trick!
+- [Sitepoint](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/) - This article made me understand rem units and introduced me to the 62.5% trick!
 
 ## Author
 
