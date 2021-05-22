@@ -17,16 +17,16 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh;
     background-color: var(--violet);
     background-image: url('../images/bg-mobile.svg');
     background-repeat: no-repeat;
+    background-size: auto;
     color: white;
 }
 
 header img {
-    width: 20.0rem;
-    padding: 2.0rem;
+    width: 15.0rem;
+    margin: 2.0rem;
 }
 
 .container {
@@ -59,7 +59,6 @@ header img {
     font-family: 'Open Sans', sans-serif;
     line-height: 2.5rem;
     font-size: 1.6rem;
-    font-weight: 400;
     margin-bottom: 2.0rem;
     width: 30.0rem;
 }
@@ -120,28 +119,77 @@ button:hover {
     color: hsl(318, 100%, 90%); 
 }
 
-@media (min-width: 37.5rem) {
+footer {
+    margin-top: 1.0rem;
+}
+
+@media (min-width: 376px) {
 body {
     background-image: url('../images/bg-desktop.svg');
     background-repeat: no-repeat;
-    font-size: 110%;
     overflow-x: hidden;
 }
 
+.flex-item {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item img {
+    width: clamp(36.0rem, 60%, 50.0rem);
+}
+
+.flex-item:nth-child(2) {
+    margin-top: 2.5rem;
+    text-align: center;
+    align-items: center;
+    max-width: 75.0rem;
+}
+
+.flex-item:nth-child(2) h1 {
+    width: 100%;
+}
+
+.flex-item:nth-child(2) p {
+    width: 100%;
+    margin-bottom: 5.0rem;
+}
+
+.flex-item:nth-child(2) .social-media {
+    margin-top: 1.0rem;
+}
+
+button {
+    margin-bottom: 5.0rem;
+}
+
+}
+
+@media (min-width: 1100px) {
+
 header img {
-    margin-top: 2.0rem;
-    margin-left: 8.0rem;
+    margin-top: 5.0rem;
+    margin-left: 7.0rem;
+    width: clamp(15.0rem, 20%, 28.0rem);
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 1.5rem;
+    margin-top: 0;
     margin-bottom: 0.5rem;
+}
+
+.flex-item img {
+    width: 60.0rem;
 }
 
 .flex-item:nth-child(2) {
     margin-top: 10.0rem;
+    margin-left: 5.0rem; 
+    max-width: 52.0rem;
     text-align: left;
     display: flex;
     align-items: flex-start;
@@ -149,22 +197,25 @@ header img {
 
 .flex-item:nth-child(2) h1 {
     font-size: 3.2rem;
-    width: 36.0rem;
+    max-width: 36.0rem;
+    width: inherit;
 }
 
 .flex-item:nth-child(2) p {
-    line-height: 2.5rem;
-    font-size: 1.6rem;
-    width: 46.0rem;
+    line-height: 3.0rem;
+    font-size: 1.8rem;
+    width: inherit;
 }
 
 .flex-item:nth-child(2) .social-media {
     align-self: flex-end;
-    margin-top: 25.0rem;
+    margin-top: 10.0rem;
 }
 
 button {
-    width: 18.0rem;
+    width: 20.0rem;
+    font-size: 1.8rem;
 }
 
 }
+
