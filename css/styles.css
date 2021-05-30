@@ -136,7 +136,7 @@ body {
 }
 
 .flex-item img {
-    width: clamp(36.0rem, 60%, 50.0rem);
+    width: clamp(32.0rem, 60%, 50.0rem);
 }
 
 .flex-item:nth-child(2) {
@@ -218,4 +218,3 @@ button {
 }
 
 }
-
